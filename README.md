@@ -4,7 +4,7 @@
 
 Requisitos:
 ```
-Python 3.11.14
+Python 3.11.4
 ```
 ```
 PySimpleGUI 4.60.5
