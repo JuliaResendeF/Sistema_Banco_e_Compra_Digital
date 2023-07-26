@@ -13,8 +13,8 @@ PySimpleGUI 4.60.5
 ```
 ## Arquivos que devem ser executdos para usar os sistemas(Executar com python):
 ```
-Sistema_Banco.py
+Interface_Banco.py
 ```
 ```
-Sistema_Compras.py
+Interface_Compras.py
 ```
