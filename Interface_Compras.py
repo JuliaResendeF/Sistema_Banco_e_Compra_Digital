@@ -113,7 +113,7 @@ while True:
                      Verifica=Sistema_Compras.Finalizar_Compra(int(event))
                      window3['-TB-'].update(False)
                      if Verifica == False:
-                         sg.popup('Saldo insufuciente')
+                         sg.popup('Saldo insuficiente')
                      else:
                          sg.popup('Compra realizada!')
                          valores3 == ''
