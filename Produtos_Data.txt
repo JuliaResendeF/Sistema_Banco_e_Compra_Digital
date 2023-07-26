@@ -1,0 +1,10 @@
+['Pro Control 25v', 140, 500, 'img/control.png','Controle para jogos, Entrada USB compativel com Computadores e Notebooks, bateria interna recarregavel']
+['Monitor Gamer 4K', 1200, 200, 'img/monitor.png','Monitor gamer para Computador 4k, HDMI, 1920 x 1080 FHD']
+['Headset sem fio', 130, 600, 'img/headset.png','Headset sem fio com microfone, compativel com consoles e computadores, acompanha USB']
+['Raposa de Pelucia', 50, 350, 'img/raposa.png','Raposa de pelucia 80% algodao e 20% poliester']
+['Gato de pelucia', 65, 300, 'img/gato.png','Gato de pelucia 80% algodao e 20% poliester']
+['Cozinha Infantil', 280, 450, 'img/cozinha.png','Cozinha Infantil amarela e azul']
+['Fritadeira sem oleo Airfry', 500, 750,'img/air.png','Fritadeira sem oleo Airfry eletrica, 220 Volts']
+['Churrasqueira Eletrica', 130, 400, 'img/churrasqueira.png','Grelha Eletrica Press Grill, 220 Volts']
+['Grelha Eletrica', 230, 350,'img/grill.png','Grelha Eletrica Press Grill, 220 Volts']
+
