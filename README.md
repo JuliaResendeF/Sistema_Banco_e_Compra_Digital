@@ -52,5 +52,9 @@ O layout_perfil funciona como uma interface base que exibe as informações do p
 <p align="center">
     <img src="https://github.com/JuliaResendeF/Sistema_Banco_e_Compra_Digital/assets/108032382/adca302b-7de2-438d-89dc-ab721523d530">
 
-o layout_Compra possui uma opção de método de pagamento “transferência bancaria”, os botões de compra e para voltar a tela inicial e exibe o valor do produto selecionado, que é reutilizado do layout_Compra,
+O layout_Compra exibe o valor do produto escolhido, que é lido no arquivo **Produtos_Data.txt** reutilizando o valor do produto usado no layout_Perfil, uma opção de método de pagamento “transferência bancaria”, um botão para retornar a tela inicial e um botão para finalizar a compra. 
+<p align="center">
+    <img src="https://github.com/JuliaResendeF/Sistema_Banco_e_Compra_Digital/assets/108032382/aedb70e2-947e-4844-b05d-a5b96bed6110">
+
+
 
