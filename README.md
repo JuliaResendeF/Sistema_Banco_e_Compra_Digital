@@ -1,6 +1,11 @@
 # Sistema Banco e Compra Digital
 
 > Status: Finalizado
+<p align="center">
+    <img src="https://github.com/JuliaResendeF/Sistema_Banco_e_Compra_Digital/assets/108032382/63fde895-e056-4f60-a5c6-1513c6de3d89">
+
+
+
 ## Resumo
 Projeto feito em Python com o auxílio do PySimpleGUI para criação da interface e de arquivos de texto para armazenamento de dados.
 
