@@ -39,5 +39,18 @@ O botão histórico de compras exibe o layout_Hist que possui um botão para ret
 O botão Adicionar Saldo exibe o layout_ADS que possui um botão para retornar a tela inicial e os botões R$20, R$50, R$200, R$500 e R$1000 que adicionam estes valores no saldo atual da conta quando executados, para isso é necessário somar o saldo atual com o valor escolhido e substituir o valor do saldo (valor antes da operação de soma) por este novo valor no arquivo **Saldo_SistemaBanco.txt**, esta operação é feita no arquivo **Sistema_Banco.py**.
 <p align="center">
     <img src="https://github.com/JuliaResendeF/Sistema_Banco_e_Compra_Digital/assets/108032382/94db0389-31a4-4087-9b17-c6adf40f5d0d">
+    
+### Sistema Compras
+Na tela inicial são exibidas as informações dos produtos disponíveis para a compra (Imagem ilustrativa e nome), cada um dos produtos possui um botão “comprar” que quando executado exibe o layout_perfil. 
+```
+Obs: Todos as imagens ilustrativas da pasta /img/ foram feitas exclusivamente para o projeto com o auxílio do software Microsoft Paint
+```
+<p align="center">
+    <img src="https://github.com/JuliaResendeF/Sistema_Banco_e_Compra_Digital/assets/108032382/5acd50fc-6e8e-4133-9dd4-4979cd667379">
 
+O layout_perfil funciona como uma interface base que exibe as informações do produto escolhido (nome, imagem, valor e descrição), esses dados estão armazenadas no arquivo **Produtos_Data.txt**, eles são lidos pelo arquivo **Sistema_Compras.py** e aplicados na interface pelo arquivo **Interface_Compras,py**, para isso é necessário converter os dados de String para lista. Essa interface também contém um botão “comprar” que confirma a escolha do produto para a compra e exibe o layout_Compra.
+<p align="center">
+    <img src="https://github.com/JuliaResendeF/Sistema_Banco_e_Compra_Digital/assets/108032382/adca302b-7de2-438d-89dc-ab721523d530">
+
+o layout_Compra possui uma opção de método de pagamento “transferência bancaria”, os botões de compra e para voltar a tela inicial e exibe o valor do produto selecionado, que é reutilizado do layout_Compra,
 
