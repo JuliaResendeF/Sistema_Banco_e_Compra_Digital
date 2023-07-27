@@ -1,6 +1,6 @@
 # Sistema Banco e Compra Digital
 
-> Status: Em desenvolvimento
+> Status: Finalizado
 ## Resumo
 Este projeto possui dois sistemas, um sistema que simula uma conta de banco com as funcionalidades de saldo, extrato, histórico de compras e adicionar saldo, e um sistema que simula uma plataforma de compras digital em que é possível visualizar e comprar produtos com o saldo do sistema de banco. Os dois sistemas compartilham dados através de documentos .txt que funcionam como um banco de dados para que dados sejam lidos e adicionados pelos sistemas. Os dados dos produtos no sistema de compras (nome, preço, quantidade no estoque, imagem e descrição) são armazenados no documento **Produtos_Data.txt** e acessados para construir elementos da interface do sistema, ao realizar uma compra o saldo do sistema banco é acessado no documento **Saldo_SistemaBanco.txt**, é feita uma verificação para saber se o saldo é suficiente para a compra, e caso seja, a compra é realizada, nessa operação o preço do produto é descontado do saldo, os dados da compra (valor do saldo antes da compra, valor do produto, valor do saldo após a compra e data da compra) são registrados no arquivo **Extrato_Data.txt** e o nome do produto é registrado no arquivo **Historico_Compras_Data.txt**. No sistema banco o saldo é acessado no documento **Saldo_SistemaBanco.txt**, os dados da tabela de extrato são lidos no documento **Extrato_Data.txt** e os dados na lista do histórico de compras são lidos no documento **Historico_Compras_Data.txt**.
 
@@ -31,7 +31,15 @@ O saldo atual da conta é armazenado no arquivo **Saldo_SistemaBanco.txt**, é l
 O botão de extrato exibe o layout_Extrato que possui um botão para retornar a tela inicial e uma tabela com as colunas (Saldo ,Compra ,Saldo atual e data), elas exibem respectivamente o Saldo anterior a compra, o  valor da compra, o saldo após o desconto do valor da compra e data em que a compra foi realizada. Esses dados estão armazenados no arquivo **Extrato_Data.txt**, são lidos no arquivo **Sistema_Banco.py** e são formatados em formato de tabela no arquivo **interface_Banco.py**, para isso é necessário ler os dados do arquivo txt (que são Strings) e converte-los em lista.
 <p align="center">
     <img src="https://github.com/JuliaResendeF/Sistema_Banco_e_Compra_Digital/assets/108032382/76cbc818-4948-4501-b8cc-cfe93f6cec34">
-    
+
+ ```
+Obs: Os arquivos de texto suportam apenas Strings, por isso é necessário converter os dados lidos em int ou lista para o uso.
+```
+### Exemplo de formatação usada no arquivo **Extrato_Data.txt** que está em String e depois é convertida em lista.
+ ```
+[Saldo anterior a compra, valor do produto, Saldo após a compra, data da compra]
+[2575, 140, 2435, '05/07/2023']
+```
 O botão histórico de compras exibe o layout_Hist que possui um botão para retornar a tela inicial e uma lista com os nomes de todos as compras feitas em sequência. Esses dados estão armazenados no arquivo **Historico_Compras_Data.txt**,são lidos no **arquivo Sistema_Banco.py** e são formatados em lista no arquivo **interface_Banco.py**, para isso é necessário ler os dados do arquivo txt (que são Strings) e converte-los em lista.
 <p align="center">
     <img src="https://github.com/JuliaResendeF/Sistema_Banco_e_Compra_Digital/assets/108032382/219cb7a9-60af-4170-be78-50a1542d2d95">
@@ -56,6 +64,6 @@ O layout_Compra exibe o valor do produto escolhido, que é lido no arquivo **Pro
 <p align="center">
     <img src="https://github.com/JuliaResendeF/Sistema_Banco_e_Compra_Digital/assets/108032382/aedb70e2-947e-4844-b05d-a5b96bed6110">
     
-Caso o botão de finalização seja executado e nenhuma opção de pagamento seja selecionada, será exibido um popup informando “Selecione um método de pagamento” e a compra não será finalizada, Caso o botão de finalização seja executado e a opção de pagamento “transferência bancaria ” seja selecionada a compra será finalizada, nessa operação o valor do saldo é lido no arquivo **Saldo_SistemaBanco.txt** pelo arquivo **Sistema_Banco.py** e essa informação é usada pelo arquivo ** Sistema_Compras.py**, o valor do produto é descontado do valor do saldo e é feita uma verificação para saber se o saldo é suficiente para a compra (se o resultado da conta foi um número negativo ou não), caso o saldo não seja suficiente a compra não é realizada e é exibido um popup informando “Saldo insuficiente”, caso o saldo seja suficiente para a compra, o valor do saldo após a compra é convertido de int para String e substitui o antigo saldo (saldo antes da compra) no arquivo **Saldo_SistemaBanco.txt**.Os dados do saldo antes da compra, do valor do produto , do saldo após a compra e da data da compra (que é obtido através da biblioteca Datetime) são incluídos em uma lista que é convertida em String e adicionada no arquivo **Extrato_Data.txt**, essa operação também lê o nome do produto comprado no arquivo **Produtos_Data.txt** e o adiciona ao arquivo **Historico_Compras_Data.txt**.
+Caso o botão de finalização seja executado e nenhuma opção de pagamento seja selecionada, será exibido um popup informando “Selecione um método de pagamento” e a compra não será finalizada, Caso o botão de finalização seja executado e a opção de pagamento “transferência bancaria ” seja selecionada a compra será finalizada, nessa operação o valor do saldo é lido no arquivo **Saldo_SistemaBanco.txt** pelo arquivo **Sistema_Banco.py** e essa informação é usada pelo arquivo **Sistema_Compras.py**, o valor do produto é descontado do valor do saldo e é feita uma verificação para saber se o saldo é suficiente para a compra (se o resultado da conta foi um número negativo ou não), caso o saldo não seja suficiente a compra não é realizada e é exibido um popup informando “Saldo insuficiente”, caso o saldo seja suficiente para a compra, o valor do saldo após a compra é convertido de int para String e substitui o antigo saldo (saldo antes da compra) no arquivo **Saldo_SistemaBanco.txt**.Os dados do saldo antes da compra, do valor do produto , do saldo após a compra e da data da compra (que é obtido através da biblioteca Datetime) são incluídos em uma lista que é convertida em String e adicionada no arquivo **Extrato_Data.txt**, essa operação também lê o nome do produto comprado no arquivo **Produtos_Data.txt** e o adiciona ao arquivo **Historico_Compras_Data.txt**.
 
 
