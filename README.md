@@ -24,15 +24,15 @@ Obs: Todos os textos exibidos nas interfaces estão propositalmente sem acento, 
 ```
 ### Sistema Banco
 Na tela inicial são exibidos o nome do dono da conta do banco, o nome fictício do banco, o saldo atual da conta, os botões Extrato, Histórico de compras e Adicionar Saldo.
-O saldo atual da conta é armazenado no arquivo **Saldo_SistemaBanco.txt**, ele é lido no arquivo **Sistema_Banco.py** e usado no arquivo interface_Banco.py, para usar esse dado em operações de conta é necessário ler os dados do arquivo txt (que são Strings) e converte-los em int.
+O saldo atual da conta é armazenado no arquivo **Saldo_SistemaBanco.txt**, é lido no arquivo **Sistema_Banco.py** e usado no arquivo **interface_Banco.py**, para usar o saldo em operações matemáticas é necessário ler os dados do arquivo txt (que são Strings) e converte-los em int.
 <p align="center">
     <img src="https://github.com/JuliaResendeF/Sistema_Banco_e_Compra_Digital/assets/108032382/8de3f90b-38c5-4c68-91dc-6c46c6fb010e">
-  
-O botão de extrato exibe o layout_Extrato que possui um botão para retornar a tela inicial e uma tabela com as colunas (Saldo ,Compra ,Saldo atual e data), elas exibem respectivamente o Saldo anterior a compra, o  valor da compra, o saldo após o desconto do valor da compra e data em que a compra foi realizada. Esses dados estão armazenados no arquivo **Extrato_Data.txt**, eles são lidos no arquivo **Sistema_Banco.py** e são formatados em formato de tabela no arquivo **interface_Banco.py**, para isso é necessário ler os dados do arquivo txt (que são Strings) e converte-los em lista.
+    
+O botão de extrato exibe o layout_Extrato que possui um botão para retornar a tela inicial e uma tabela com as colunas (Saldo ,Compra ,Saldo atual e data), elas exibem respectivamente o Saldo anterior a compra, o  valor da compra, o saldo após o desconto do valor da compra e data em que a compra foi realizada. Esses dados estão armazenados no arquivo **Extrato_Data.txt**, são lidos no arquivo **Sistema_Banco.py** e são formatados em formato de tabela no arquivo **interface_Banco.py**, para isso é necessário ler os dados do arquivo txt (que são Strings) e converte-los em lista.
 <p align="center">
     <img src="https://github.com/JuliaResendeF/Sistema_Banco_e_Compra_Digital/assets/108032382/76cbc818-4948-4501-b8cc-cfe93f6cec34">
     
-O botão histórico de compras exibe o layout_Hist que possui um botão para retornar a tela inicial e uma lista com os nomes de todos as compras feitas em sequência. Esses dados estão armazenados no arquivo **Historico_Compras_Data.txt**, eles são lidos no **arquivo Sistema_Banco.py** e são formatados em lista no arquivo **interface_Banco.py**, para isso é necessário ler os dados do arquivo txt (que são Strings) e converte-los em lista.
+O botão histórico de compras exibe o layout_Hist que possui um botão para retornar a tela inicial e uma lista com os nomes de todos as compras feitas em sequência. Esses dados estão armazenados no arquivo **Historico_Compras_Data.txt**,são lidos no **arquivo Sistema_Banco.py** e são formatados em lista no arquivo **interface_Banco.py**, para isso é necessário ler os dados do arquivo txt (que são Strings) e converte-los em lista.
 <p align="center">
     <img src="https://github.com/JuliaResendeF/Sistema_Banco_e_Compra_Digital/assets/108032382/219cb7a9-60af-4170-be78-50a1542d2d95">
 
