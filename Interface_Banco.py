@@ -12,7 +12,7 @@ data = Sistema_Banco.Extrato_List
 Saldo = Sistema_Banco.AchaSALDO()
 Saldo = sg.Text(Saldo ,font=('Arial Bold',40), key='-saldo-')
 Name = sg.Text(Sistema_Banco.Name,size=(20,3))
-lista_compras = sg.Listbox(Sistema_Banco.lista_compras,size=(40,20),font=('Arial Bold',20), key="-LISTBOX-", justification="center",background_color="SlateGray",enable_events=True)
+lista_compras = sg.Listbox(Sistema_Banco.lista_compras,size=(40,20),font=('Arial Bold',20), key="-LISTBOX-",background_color="SlateGray",enable_events=True)
 Table_Ext_Indices=['Saldo', 'Compra', 'Saldo atual','data']
 Table_Ext = sg.Table(values=data, headings=Table_Ext_Indices,
    auto_size_columns=True,
