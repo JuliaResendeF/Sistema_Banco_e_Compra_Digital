@@ -58,7 +58,7 @@ O botão Adicionar Saldo exibe o layout_ADS que possui um botão para retornar a
 ### Sistema Compras
 Na tela inicial são exibidas as informações dos produtos disponíveis para a compra (Imagem ilustrativa e nome), cada um dos produtos possui um botão “comprar” que quando executado exibe o layout_perfil. 
 ```
-Obs: Todos as imagens ilustrativas da pasta /img/ foram feitas exclusivamente para o projeto com o auxílio do software Microsoft Paint
+Obs: Todas as imagens ilustrativas da pasta /img/ foram feitas exclusivamente para o projeto com o auxílio do software Microsoft Paint
 ```
 <p align="center">
     <img src="https://github.com/JuliaResendeF/Sistema_Banco_e_Compra_Digital/assets/108032382/5acd50fc-6e8e-4133-9dd4-4979cd667379">
