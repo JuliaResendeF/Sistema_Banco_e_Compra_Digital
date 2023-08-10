@@ -13,10 +13,10 @@ Este projeto possui dois sistemas, um sistema que simula uma conta de banco com 
 
 ## Requisitos:
 ```
-Python 3.11.4
+Python 3.11.4 or above
 ```
 ```
-PySimpleGUI 4.60.5
+PySimpleGUI 4.60.5 or above
 ```
 Digite no terminal:
 ```
