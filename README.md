@@ -17,6 +17,7 @@ Python 3.11.4
 ```
 ```
 PySimpleGUI 4.60.5
+Digite no terminal: pip install PySimpleGUI
 ```
 ## Arquivos que devem ser executdos para usar os sistemas (Executar com python):
 ```
